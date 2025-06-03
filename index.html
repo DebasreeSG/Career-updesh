@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outreach Contact Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+    }
+
+    .container {
+      display: flex;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 1100px;
+      padding: 30px;
+      gap: 40px;
+      margin: 40px auto;
+    }
+
+    .profile {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .profile h2 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .profile p {
+      font-size: 16px;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .about {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #444;
+      text-align: left;
+      padding: 0 10px;
+    }
+
+    .about a {
+      color: black;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .form {
+      flex: 2;
+    }
+
+    .form h3 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #000000;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .form-group textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .form button {
+      margin-top: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .form button:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .profile img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .about {
+        text-align: center;
+      }
+    }
+
+    .article-section {
+      padding: 50px 20px;
+      background: #ffffff;
+      margin: 30px auto;
+      max-width: 1000px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+
+    .article-section img {
+      display: block;
+      margin: 0 auto 30px;
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .article-section h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .article-section p,
+    .article-section ul {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .article-section ul {
+      padding-left: 20px;
+    }
+
+    .key-message {
+      font-weight: bold;
+      font-style: italic;
+      color: #1a1a1a;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="profile">
+      <img src="logo.jpg" alt="Profile Photo" />
+      <h2>Deepak Bagchi</h2>
+      <p>Career Counselor</p>
+      <div class="about">
+        <p>Secure your seat in top universities with expert admission guidance. Get direct admission in BBA, B.Tech, MBA, Law, Design & Psychology without entrance exams. Access India’s best colleges with career-focused programs and placement support.</p>
+        <p>Personalized career counseling and 100% admission consultancy available. Book your free session today!</p>
+        <p><strong>Contact:</strong><br>Deepak Bagchi - <a href="tel:9716982361">9716982361</a><br>Rachiata Gupta - <a href="tel:9211751931">9211751931</a></p>
+        <p><strong>For queries mail at:</strong> <a href="mailto:updeshcareer@gmail.com">updeshcareer@gmail.com</a></p>
+      </div>
+    </div> <br>
+
+    <div class="form">
+      <h3>Contact Me</h3>
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="f2f278bf-0efd-4125-aa0b-6ce0fd10c2fa">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="course">Course *</label>
+          <input type="text" id="course" name="course" required />
+        </div>
+        <div class="form-group">
+          <label for="query">Query *</label>
+          <textarea id="query" name="query" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <section class="article-section">
+    <img src="article.jpg" alt="Future Ready Education" />
+    <div>
+      <h3>1. WHY should a student care about future-readiness in college?</h3>
+      <p>
+        Because by 2030, the world of work will be dramatically reshaped by digital access, AI, robotics, and shifting economic conditions.
+        Choosing a college that prepares students for this future is essential for relevance, opportunity, and resilience in a transforming world.
+      </p>
+      <p class="key-message">"Choose a college not just for a degree, but for future-proof skills like AI literacy, analytical thinking, and adaptability."</p>
+
+      <h3>2. HOW can a college prepare students for these changes?</h3>
+      <ul>
+        <li>Integrating technology in curriculum: Focus on AI, big data, cybersecurity, automation, and digital communication.</li>
+        <li>Developing human skills: Foster creativity, critical thinking, resilience, and leadership.</li>
+        <li>Experiential learning: Provide hands-on projects, internships, and industry collaboration.</li>
+        <li>Global exposure: Encourage diverse thinking and adaptability to global trends.</li>
+      </ul>
+      <p class="key-message">"A future-ready college equips students with both tech skills and human skills, helping them thrive amid automation and economic shifts."</p>
+
+      <h3>3. WHAT should students look for in a future-ready college?</h3>
+      <ul>
+        <li>Courses in emerging technologies (AI, Data Science, Energy Tech, Cybersecurity)</li>
+        <li>Strong placement records in tech-driven industries</li>
+        <li>Innovation labs or incubators</li>
+        <li>Emphasis on leadership, creativity, and flexibility training</li>
+        <li>International exposure and adaptable learning methods</li>
+      </ul>
+      <p class="key-message">"Look for colleges offering skills for tomorrow, not just degrees for today."</p>
+    </div>
+  </section>
+
+  <footer style="text-align:center; padding: 20px 0; background:#007bff; color: white; font-size: 14px; margin-top: 40px;">
+    &copy; 2025 Career Updesh. All rights reserved.
+  </footer>
+
+</body>
+</html>
